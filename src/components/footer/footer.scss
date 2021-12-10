@@ -1,0 +1,141 @@
+.footer {
+  color: $color-gray;
+  font-family: 'Roboto';
+
+  a {
+    @include style_btn($color-gray, $color-white, none, 0.8rem);
+
+    i {
+      border: 1px solid;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      padding-top: 8px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.footer-top {
+  background-color: $color-gray11;
+  padding: 32px 0px;
+
+  &__item {
+    max-width: 260px;
+    margin: 0 auto;
+
+    ul {
+      li {
+        margin-top: 8px;
+      }
+    }
+
+    &--1 {
+
+      ul {
+
+        li {
+          position: relative;
+          padding-left: 40px;
+
+          a {
+            @include style_btn($color-gray, $color-gray, none, 0.8rem);
+
+            i {
+              position: absolute;
+              left: 0;
+              top: 6px;
+              color: $color-white;
+              border-color: $color-gray;
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    &__form {
+      position: relative;
+      margin: 16px 0px;
+      max-width: 300px;
+
+      & input {
+        font-size: 0.8rem;
+        padding: 4px 4px 4px 16px;
+        color: $color-gray;
+        border: none;
+        outline: none;
+        height: 32px;
+
+        &[type="text"] {
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+          background-color: $color-black;
+          width: calc(100% - 98px);
+        }
+        
+        &[type="submit"] {
+          position: absolute;
+          right: 0;
+          font-size: 0.7rem;
+          width: 98px;
+          padding: 4px 12px;
+          color: $color-white;
+          background-color: $color-gray;
+          border-top-right-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+      }
+    }
+
+    &__cross-bar {
+      margin-top: 24px;
+      
+      .side-bar {
+        li {
+
+          a {
+            @include style_btn($color-gray, $color-white, none, 0.8rem);
+
+            &:hover {
+
+              i {
+                background-color: $color-orange;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: $color-black;
+  padding: 20px 0px;
+
+  &__item {
+
+    &--left {
+      padding: 4px;
+
+      > a {
+        color: $color-white;
+      }
+    }
+
+    span {
+      font-size: 0.8rem;
+      padding-right: 4px;
+    }
+    
+    &--right {
+      text-align: right;
+    }
+  }
+}

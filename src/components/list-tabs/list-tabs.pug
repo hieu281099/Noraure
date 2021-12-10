@@ -1,0 +1,406 @@
+section.list-tabs 
+  .container 
+    ul.list-tabs__tabs.nav.nav-pills.mb-3#pill-tab(role="tablist")
+      li.list-tabs__tabs__item.nav-item 
+        a.title.title--underline.nav-link#pills-best-seller-tab(href="#pills-best-seller", data-toggle="pill", role="tab", aria-controls="pills-best-seller", aria-selected="true") Best seller
+      li.list-tabs__tabs__item.nav-item 
+        a.title.title--underline.nav-link.active#pills-new-products-tab(href="#pills-new-products", data-toggle="pill", role="tab", aria-controls="pills-new-products", aria-selected="true") New products 
+      li.list-tabs__tabs__item.nav-item 
+        a.title.title--underline.nav-link#pills-must-have-tab(href="#pills-must-have", data-toggle="pill", role="tab", aria-controls="pills-must-have", aria-selected="true") Must have
+    .list-tabs__content.tab-content#pills-tabContent 
+      .tab-pane.fade#pills-best-seller(role="tabpanel", aira-labelledby="pills-best-seller-tab") 
+        .row
+          .product__slide.carousel-multiple.carousel.slide#slideBestSeller(data-ride="carousel")
+            .carousel-inner(role="listbox")
+              .item.item--center.carousel-item.active 
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  .product__slide__sale Sale!
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/lambskin-shoe.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage lambskin shoe
+                  span.product__slide__price 
+                    del $299.00
+                    ins $199.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to card
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/sbhasr-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Luxury leather bag
+                  span.product__slide__price $99.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage glasses
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/ge-lambskin-shoulder-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Skin shoulder bag
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  .product__slide__sale Sale!
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/leather-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Leather bag
+                  span.product__slide__price 
+                    del $180.00
+                    ins $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/leather-shoe.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Leather shoe
+                  span.product__slide__price $79.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+            a.control.control--left.carousel-control-prev(href="#slideBestSeller", role="button", data-slide="prev")
+              i.fas.fa-chevron-left 
+            a.control.control--right.carousel-control-next(href="#slideBestSeller", role="button", data-slide="next")
+              i.fas.fa-chevron-right 
+      .tab-pane.fade.show.active#pills-new-products(role="tabpanel", aira-labelledby="pills-new-products-tab") 
+        .row
+          .product__slide.carousel-multiple.carousel.slide#slideNewProduct(data-ride="carousel")
+            .carousel-inner(role="listbox")
+              .item.item--center.carousel-item.active 
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses-vintage.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Glasses
+                  span.product__slide__price $79.00 - $100.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Select options
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/sbhasr-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Luxury leather bag
+                  span.product__slide__price $99.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/vening-shoulder-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage shoulder bag
+                  span.product__slide__price $99.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  .product__slide__sale Sale!
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/leather-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Leather bag
+                  span.product__slide__price 
+                    del $180.00
+                    ins $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage glasses
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses-vintage.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Skin lambskin glasses
+                  span.product__slide__price $199.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+            a.control.control--left.carousel-control-prev(href="#slideNewProduct", role="button", data-slide="prev")
+              i.fas.fa-chevron-left 
+            a.control.control--right.carousel-control-next(href="#slideNewProduct", role="button", data-slide="next")
+              i.fas.fa-chevron-right 
+      .tab-pane.fade#pills-must-have(role="tabpanel", aira-labelledby="pills-must-have-tab") 
+          .row
+          .product__slide.carousel-multiple.carousel.slide#slideMustHave(data-ride="carousel")
+            .carousel-inner(role="listbox")
+              .item.item--center.carousel-item.active  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/vening-shoulder-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage shoulder bag
+                  span.product__slide__price $99.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item 
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  .product__slide__sale Sale!
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/lambskin-shoe.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage lambskin shoe
+                  span.product__slide__price 
+                    del $299.00
+                    ins $199.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to card
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/k-navy-blue-vintage-lambskin-shoe.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage lambskin shoe
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage lambskin glasses
+                  span.product__slide__price $220.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/glasses.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Vintage glasses
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+              .item.item--center.carousel-item  
+                .col-xl-3.col-lg-4.col-md-6.col-12
+                  picture.product__slide__image 
+                    img.img-fluid(src="../../src/assets/images/ge-lambskin-shoulder-bag.jpg", alt="")
+                    a.btn-view(href="") 
+                      i.far.fa-eye 
+                  h4.product__slide__name 
+                    a(href="") Skin shoulder bag 
+                  span.product__slide__price $170.00
+                  span.product__slide__rate 
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                  a.product__slide__btn.product__slide__btn--left(href="")
+                    i.fas.fa-heart  
+                  a.product__slide__btn(href="") Add to cart
+                  a.product__slide__btn.product__slide__btn--right(href="")
+                    i.fas.fa-retweet 
+            a.control.control--left.carousel-control-prev(href="#slideMustHave", role="button", data-slide="prev")
+              i.fas.fa-chevron-left 
+            a.control.control--right.carousel-control-next(href="#slideMustHave", role="button", data-slide="next")
+              i.fas.fa-chevron-right 

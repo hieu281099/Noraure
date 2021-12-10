@@ -1,0 +1,214 @@
+.header-top {
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 0.8rem;
+
+  &__menu {
+    text-align: right;
+  }
+}
+
+.header-bottom {
+  background-color: $color-white;
+  box-shadow: 0 .5px .5px $color-gray-white;
+
+  &__logo {
+    padding: 24px 0px;
+  }
+
+  &__menu {
+    text-align: right;
+    
+
+    &__list {
+      display: inline-block;
+
+      @media screen and (max-width: 991px){
+        display: none;
+      }
+
+      > nav {
+        display: inline-flex;
+        list-style: none;
+      
+      }
+
+      &__item {
+        padding: 34px 16px;
+        margin: 0 2px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          background-color: rgba($color: $color-gray31, $alpha: 0.2);
+          
+          > a {
+            color: $color-black;
+          }
+
+          .dropdown-menu {
+            display: block;
+            animation: bottomToTop ease .5s;
+            top: 96%;
+          }
+        }
+
+        > a {
+          @include style_btn($color-gray31, $color-black, uppercase, 0.8rem);
+          height: 90px;
+        }
+        
+        &--mega-full-width {
+          position: static;
+
+          .dropdown-menu {
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &__sidebar {
+      display: inline-block;
+      line-height: 90px;
+
+      &__item {
+        display: inline-block;
+        padding: 0 8px;
+        cursor: pointer;
+
+        &.search {
+          position: static;
+        }
+      }
+    }
+
+    &__mobile {
+      display: none;
+      padding: 0 8px;
+      line-height: 90px;
+      cursor: pointer;
+
+      @media screen and (max-width: 991px) {
+        display: inline-block;
+        position: relative;
+      }
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 1px 2px $color-gray31;
+  padding: 8px;
+
+  &__item {
+
+    &:hover {
+
+      > a {
+        color: $color-orange;
+      }
+    }
+    
+    &.item {
+      padding: 8px 0;
+      border-bottom: 1px solid $color-gray31;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    > a {
+      @include style_btn($color-gray31, $color-orange, none, 0.8rem);
+      font-family: sans-serif;
+    }
+
+    &.title {
+      
+      > a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9rem;
+        font-family: 'Oswald';
+      }
+    }
+  }
+
+  &__image {
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.mini-menu {
+
+  &__item {
+    padding: 4px 0;
+    border-bottom: 1px solid $color-gray31;
+
+    &:hover {
+
+      a {
+        color: $color-orange;
+        margin-left: 4px;
+        transition: margin ease .5s;
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    a {
+      @include style_btn($color-gray31, $color-orange, none, 0.8rem);
+      font-family: sans-serif;
+    }
+  }
+}
+
+.search-form {
+  background-color: $color-white;
+  display: none;
+  box-shadow: 0 1px 2px $color-gray31;
+  padding: 16px 70px 0px 16px;
+
+  &.active {
+    display: inline-block;
+    position: absolute;
+    top: 96%;
+    right: 0;
+    animation: bottomToTop ease .5s;
+    z-index: 999;
+  }
+  
+  input {
+    line-height: 40px;
+    font-size: 0.8rem;
+
+    &[type="text"] {
+      border: 1px solid $color-gray-white;
+      padding: 0px 4px;
+      outline: none;
+    }
+
+    &[type="submit"] {
+      position: absolute;
+      background-color: $color-orange;
+      border: none;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+}

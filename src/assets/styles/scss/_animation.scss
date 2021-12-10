@@ -1,0 +1,19 @@
+@keyframes bottomToTop {
+  0%{top: 120%; opacity: 0;}
+  100%{top: 96%; opacity: 1;}
+}
+
+@keyframes buttonRight {
+  0%{right: -50px; opacity: 0;}
+  100%{right: -36px; opacity: .5;}
+}
+
+@keyframes buttonLeft {
+  0%{left: -50px; opacity: 0;}
+  100%{left: -36px; opacity: .5;}
+}
+
+@keyframes buttonBottom {
+  0%{bottom: 0; opacity: 0;}
+  100%{bottom: 200px; opacity: 1;}
+}

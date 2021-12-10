@@ -1,0 +1,27 @@
+.button-to-top {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $color-orange;
+  text-align: center;
+  padding-top: 12px;
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  z-index: 999;
+  animation: buttonBottom .3s ease;
+  cursor: pointer;
+  display: none;
+  
+  &:hover {
+    background-color: $color-white;
+    
+    a {
+      color: $color-orange;
+    }
+  }
+
+  a {
+    color: $color-white;
+  }
+}

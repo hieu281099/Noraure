@@ -1,0 +1,30 @@
+.partner {
+  padding: 40px 0 70px;
+  border-top: .5px solid $color-white-gray;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    &__item {
+
+      @media (min-width:992px) {
+        width: 20%;
+      }
+
+      @media (min-width:768px) and (max-width: 992px)  {
+        width: 50%;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        max-width: 240px;
+      }
+    }
+  }
+}

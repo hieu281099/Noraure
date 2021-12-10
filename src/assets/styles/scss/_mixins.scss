@@ -1,0 +1,8 @@
+@mixin style_btn($color: $color-white, $colorHover: $color-white, $textTransform: uppercase, $fontSize: 1rem) {
+  color: $color;
+  text-transform: $textTransform;
+  font-size: $fontSize;
+  &:hover{
+    color: $colorHover;
+  }
+}

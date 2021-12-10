@@ -1,0 +1,26 @@
+.banner-slide {
+  &__control {
+    background: rgba($color: $color-black, $alpha: 0.1);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: none;
+    font-size: 1.8rem;
+    color: $color-white;
+    opacity: 1;
+
+    &:hover {
+      background: $color-white;
+      color: $color-black;
+    }
+    
+    &--prev {
+      left: 12px;
+    }
+
+    &--next {
+      right: 12px;
+    }
+  }
+}

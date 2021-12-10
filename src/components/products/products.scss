@@ -1,0 +1,146 @@
+.product{
+  margin-bottom: 80px;
+
+  &__slide {
+    text-transform: uppercase;
+
+    &:hover {
+      .control {
+        display: flex;
+      }
+    }
+
+    .item {
+      min-height: 420px;
+
+      > div {
+        &:hover {
+          .btn-view {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+          }
+
+          .product__slide{
+            &__price {
+              display: none;
+            }
+
+            &__rate {
+              display: block;
+            }
+            
+            &__btn {
+              &--left,
+              &--right {
+                border: 1px solid $color-gray;
+  
+                i {
+                  font-size: 12px;
+                }
+              }
+  
+              &--left {
+                padding: 8px 10px;
+              }
+  
+              &--right {
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__image {
+      position: relative;
+    }
+
+    &__sale {
+      position: absolute;
+      top: 8;
+      left: 24px;
+      color: $color-gray;
+      background-color: $color-white;
+      padding: 12px 10px;
+      border-radius: 50%;
+      box-shadow: 1px 1px $color-gray;
+      text-transform: none;
+      z-index: 1;
+    }
+
+    &__name {
+      font-size: 14px;
+      margin: 24px 0 16px;
+
+      a {
+        color: $color-gray;
+        transition: color 1s ease;
+
+        &:hover {
+          color: $color-orange;
+        }
+      }
+    }
+
+    &__price {
+      color: $color-dark-gray;
+      display: block;
+      margin-bottom: 16px;
+
+      del {
+        text-decoration: none;
+        position: relative;
+        margin-right: 12px;
+        color: $color-gray-white;
+        font-size: 12px;
+
+        &::before {
+          content: "";
+          width: 42px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          border-top: 1px solid $color-gray-white;
+          transform: rotate(-20deg);
+        }
+      }
+    }
+
+    &__rate {
+      color: $color-orange;
+      font-size: 12px;
+      padding: 4px 0 5px;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    &__btn {
+      color: $color-gray;
+      font-size: 10px;
+      border: .5px solid $color-gray;
+      border-radius: 16px;
+      padding: 7px 20px;
+      line-height: 32px;
+
+      &:hover {
+        background-color: $color-orange;
+        color: $color-white;
+        border-color: $color-orange;
+      }
+
+      &--left,
+      &--right {
+        padding: 8px 0;
+        border: none;
+        transition: all .5s ease;
+        margin: 8px;
+        
+        i {
+          font-size: 0;
+        }
+      }
+
+    }
+  }
+}
